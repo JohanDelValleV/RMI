@@ -14,6 +14,6 @@ public class Main {
         Score score = (Score) UnicastRemoteObject.exportObject(server, 0);
 
         registry.rebind("verbs", score);
-        System.out.println("Server is running");
+        System.out.println("Server is running in PORT: " + Registry.REGISTRY_PORT);
     }
 }
